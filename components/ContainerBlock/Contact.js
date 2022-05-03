@@ -4,14 +4,17 @@ import userData from "@constants/data";
 export default function Contact() {
   return (
     <section>
+
       <div className="max-w-6xl mx-auto h-48 bg-white dark:bg-gray-800 antialiased">
         <h1 className=" text-5xl md:text-9xl font-bold py-20 text-center md:text-left">
           Contact
         </h1>
       </div>
+
       <div className="relative z-10 rounded-md shadow-md bg-[#02044A] p-4 md:p-10 lg:p-20 max-w-6xl mx-auto mb-20 -mt-4">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
           <div className="md:ml-4">
+
             <header className="">
               <h1 className="text-gray-50 font-semibold text-2xl">
                 Get in touch, let's talk.
@@ -20,6 +23,7 @@ export default function Contact() {
                 Fill in the details and I'll get back to you as soon as I can.
               </p>
             </header>
+
             <div className="icons-container inline-flex flex-col my-20">
               <div className="flex flex-row items-center space-x-6 rounded-md border border-[#02044A] hover:border hover:border-blue-500 p-4">
                 <svg
@@ -39,6 +43,7 @@ export default function Contact() {
                   {userData.phone}
                 </p>
               </div>
+
               <div className="flex flex-row items-center space-x-6 rounded-md border border-[#02044A] hover:border hover:border-blue-500 p-4">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -54,6 +59,7 @@ export default function Contact() {
                   {userData.email}
                 </p>
               </div>
+
               <div className="flex flex-row items-center space-x-6 rounded-md border border-[#02044A] hover:border hover:border-blue-500 p-4">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -70,6 +76,7 @@ export default function Contact() {
                 </p>
               </div>
             </div>
+
             <div className="social-icons flex flex-row space-x-8">
               <a
                 href={userData.socialLinks.facebook}
@@ -141,6 +148,7 @@ export default function Contact() {
               </a>
             </div>
           </div>
+
           <form className="form rounded-lg bg-white p-4 flex flex-col">
             <label htmlFor="name" className="text-sm text-gray-600 mx-4">
               {" "}
